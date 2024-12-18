@@ -12,9 +12,6 @@ class DummyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Text(
-          "This is a stateless widget with a build method. So hot-reload should work!"),
-    );
+    return Container(child: Text("This is a container, bruv!"));
   }
 }
