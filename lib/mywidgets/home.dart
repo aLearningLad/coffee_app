@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ftest/mywidgets/coffee_prefs.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -20,24 +21,14 @@ class Home extends StatelessWidget {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Row(
-              children: [
-                Text('Strength: '),
-                Text('3'),
-                SizedBox(
-                  width: 50,
-                )
-              ],
-            ),
-            Row(
-              children: [
-                Text('Sugars: '),
-                Text('3'),
-                SizedBox(
-                  width: 50,
-                )
-              ],
-            ),
+            Container(
+                color: Colors.brown[200],
+                padding: const EdgeInsets.all(20),
+                child: const Text("How I like my coffee . . .")),
+            Container(
+                color: Colors.brown[100],
+                padding: const EdgeInsets.all(20),
+                child: const CoffeePrefs()),
           ],
         ));
   }
