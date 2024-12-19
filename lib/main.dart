@@ -1,17 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:ftest/mywidgets/home.dart';
 
 void main() {
   runApp(MaterialApp(
-      home: Scaffold(
-          appBar: AppBar(title: Text("This is the app bar! Yeah!")),
-          body: DummyWidget())));
-}
-
-class DummyWidget extends StatelessWidget {
-  const DummyWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(child: Text("This is a container, bruv!"));
-  }
+    home: Home(),
+  ));
 }
