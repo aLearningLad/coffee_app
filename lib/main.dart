@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:ftest/mywidgets/home.dart';
 // import 'package:ftest/mywidgets/home.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Sandbox(),
+    home: Home(),
   ));
 }
 
